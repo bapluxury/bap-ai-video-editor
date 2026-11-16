@@ -32,7 +32,7 @@ col1, col2 = st.columns([1, 1])
 
 with col1:
     st.subheader("1. Tải lên Video & Sản phẩm")
-    project_name = st.text_input("Tên dự án", placeholder="VD: Review Me Dốt Vị Xưa - TikTok")
+    project_name = st.text_input("Tên dự án", placeholder="VD: Review Khay Đựng Trứng Thông Minh")
     uploaded_video = st.file_uploader("Chọn video gốc (MP4, MOV)", type=["mp4", "mov", "avi"])
     
     if uploaded_video:
@@ -62,7 +62,7 @@ with col2:
                         f"tỷ lệ khung hình {aspect_ratio} cho sản phẩm sau:\n{product_info}"
                     )
                     response = client.models.generate_content(
-                        model="gemini-2.5-flash",
+                        model="gemini-3.8-flash",
                         contents=prompt
                     )
                     st.markdown("### 📝 Kế hoạch dựng & Lời thoại đề xuất")
