@@ -62,7 +62,7 @@ with col2:
                         f"tỷ lệ khung hình {aspect_ratio} cho sản phẩm sau:\n{product_info}"
                     )
                     response = client.models.generate_content(
-                        model="gemini-3.8-flash",
+                        model="gemini-1.5-flash",
                         contents=prompt
                     )
                     st.markdown("### 📝 Kế hoạch dựng & Lời thoại đề xuất")
